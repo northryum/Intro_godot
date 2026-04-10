@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://blmkaucko2m12"]
 
 [ext_resource type="Texture2D" uid="uid://boj0qqvdk5aau" path="res://icon.svg" id="1_3546x"]
-[ext_resource type="Script" uid="uid://cvxbo52htqo6n" path="res://Scripts/sprite_2d_tanke.gd" id="2_xtt61"]
+[ext_resource type="Script" uid="uid://nf4gar260yh1" path="res://Scripts/tanque.gd" id="1_vntfs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xtt61"]
 size = Vector2(128, 131)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=2104716368]
+script = ExtResource("1_vntfs")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=731506968]
 texture = ExtResource("1_3546x")
-script = ExtResource("2_xtt61")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1633571942]
 position = Vector2(0, -0.5)

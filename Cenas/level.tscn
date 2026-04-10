@@ -1,13 +1,28 @@
 [gd_scene format=3 uid="uid://pftoulempslq"]
 
-[ext_resource type="Script" uid="uid://dcbhi5pbhyf41" path="res://Scripts/level3.gd" id="1_36yle"]
+[ext_resource type="Script" uid="uid://nf474ipil1m4" path="res://Scripts/level.gd" id="1_q8twf"]
 [ext_resource type="Script" uid="uid://dqeh2p0nkmsb4" path="res://Sprites/sprite_2d.gd" id="2_fl2wj"]
 [ext_resource type="Texture2D" uid="uid://boj0qqvdk5aau" path="res://icon.svg" id="2_q8twf"]
+[ext_resource type="PackedScene" uid="uid://blmkaucko2m12" path="res://Cenas/tanque.tscn" id="4_0udtf"]
+[ext_resource type="PackedScene" uid="uid://30dc6mvnkqks" path="res://Cenas/parede.tscn" id="5_08k35"]
 
 [node name="Level" type="Node2D" unique_id=945957495]
-script = ExtResource("1_36yle")
+script = ExtResource("1_q8twf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=646137333]
-position = Vector2(62, 44)
+visible = false
+position = Vector2(556, 287)
 texture = ExtResource("2_q8twf")
 script = ExtResource("2_fl2wj")
+
+[node name="tanque" parent="." unique_id=2104716368 instance=ExtResource("4_0udtf")]
+position = Vector2(492, 319)
+
+[node name="parede" parent="." unique_id=641053192 instance=ExtResource("5_08k35")]
+position = Vector2(872, 337)
+
+[node name="parede2" parent="." unique_id=1385896283 instance=ExtResource("5_08k35")]
+position = Vector2(609, 69)
+
+[node name="parede3" parent="." unique_id=510246349 instance=ExtResource("5_08k35")]
+position = Vector2(727, 481)
