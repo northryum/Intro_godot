@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://pftoulempslq"]
+
+[ext_resource type="Script" uid="uid://c08wsoyq8q2ir" path="res://Scripts/level2.gd" id="1_36yle"]
+
+[node name="Level" type="Node2D" unique_id=945957495]
+script = ExtResource("1_36yle")
