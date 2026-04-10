@@ -4,3 +4,9 @@
 
 [node name="Level" type="Node2D" unique_id=945957495]
 script = ExtResource("1_36yle")
+
+[node name="Control" type="Control" parent="." unique_id=160740556]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
