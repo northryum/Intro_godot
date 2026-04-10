@@ -75,10 +75,6 @@ extends TextEdit
 
 #endregion
 
-#region 
-
-#endregion
-
 #region colisão
 # Tipos de colisão ----
 # StaticBody2D : Corpo parado, ex: pedra
@@ -88,4 +84,15 @@ extends TextEdit
 
 # Collisionshape2D : Confere forma na nossa colisão
 
+# Signals ou sinais ----
+# Emissor: ex: botao start; o player usa uma poção de cura
+# Receptor: ex: Menu inicia o jogo; a vida do player é curada
+
+#endregion
+
+#region Signals
+# signals ----
+# signal : cria um sinal
+# connect : conectar o sinal em alguma função criada
+# emit : emitir o sinal quando necessario
 #endregion

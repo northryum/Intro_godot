@@ -44,7 +44,7 @@ func _process(_delta: float) -> void:
 # Movimentação de Tanque
  # armazena um vector2.up que deve ser associado->(aa.bb) ao rotated, deve receber entre () o angulo que devemos trabalhar
 	var direction := Vector2.UP.rotated(rotation) # aaa
-	print("O radiano é: ", direction)
+	#print("O radiano é: ", direction)
 	
 	var velocity2 := Vector2.ZERO
 	if Input.is_action_pressed("ui_up"):

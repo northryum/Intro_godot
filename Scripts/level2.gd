@@ -1,5 +1,8 @@
 extends Node2D
 
+#@export var numero_de_vidas := 3
+#@onready var tanque: CharacterBody2D = $tanque
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

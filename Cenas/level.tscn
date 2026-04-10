@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://pftoulempslq"]
 
-[ext_resource type="Script" uid="uid://nf474ipil1m4" path="res://Scripts/level.gd" id="1_q8twf"]
-[ext_resource type="Script" uid="uid://dqeh2p0nkmsb4" path="res://Sprites/sprite_2d.gd" id="2_fl2wj"]
-[ext_resource type="Texture2D" uid="uid://boj0qqvdk5aau" path="res://icon.svg" id="2_q8twf"]
+[ext_resource type="Script" uid="uid://dug75cngdil85" path="res://Scripts/level4.gd" id="1_p7qd4"]
+[ext_resource type="Script" uid="uid://dqeh2p0nkmsb4" path="res://Scripts/sprite_2d.gd" id="2_fl2wj"]
+[ext_resource type="Texture2D" uid="uid://boj0qqvdk5aau" path="res://Sprites/icon.svg" id="2_q8twf"]
 [ext_resource type="PackedScene" uid="uid://blmkaucko2m12" path="res://Cenas/tanque.tscn" id="4_0udtf"]
 [ext_resource type="PackedScene" uid="uid://30dc6mvnkqks" path="res://Cenas/parede.tscn" id="5_08k35"]
+[ext_resource type="PackedScene" uid="uid://bqqdvq33giaew" path="res://Cenas/area_2d.tscn" id="5_byt22"]
+[ext_resource type="PackedScene" uid="uid://m2c1j3f0x1xc" path="res://Cenas/area_segura.tscn" id="5_p7qd4"]
 
 [node name="Level" type="Node2D" unique_id=945957495]
-script = ExtResource("1_q8twf")
+script = ExtResource("1_p7qd4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=646137333]
 visible = false
@@ -18,11 +20,45 @@ script = ExtResource("2_fl2wj")
 [node name="tanque" parent="." unique_id=2104716368 instance=ExtResource("4_0udtf")]
 position = Vector2(492, 319)
 
-[node name="parede" parent="." unique_id=641053192 instance=ExtResource("5_08k35")]
-position = Vector2(872, 337)
-
 [node name="parede2" parent="." unique_id=1385896283 instance=ExtResource("5_08k35")]
-position = Vector2(609, 69)
+position = Vector2(740, 66)
 
 [node name="parede3" parent="." unique_id=510246349 instance=ExtResource("5_08k35")]
-position = Vector2(727, 481)
+position = Vector2(1087, 578)
+
+[node name="Area2D" parent="." unique_id=266038952 instance=ExtResource("5_byt22")]
+position = Vector2(-73, 319)
+
+[node name="area_segura" parent="." unique_id=1215230280 instance=ExtResource("5_p7qd4")]
+position = Vector2(903, 9)
+
+[node name="Label" type="Label" parent="." unique_id=294820909]
+offset_left = 371.0
+offset_top = 2.0
+offset_right = 653.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.1882353, 0.5921569, 0.23137255, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 41
+text = "kkkkkkkkkkkk"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=352950997]
+offset_top = 170.0
+offset_right = 426.0
+offset_bottom = 271.0
+theme_override_colors/font_color = Color(0.31, 1, 1, 0.44705883)
+theme_override_constants/outline_size = 26
+theme_override_font_sizes/font_size = 46
+text = "Área Segura"
+
+[node name="Label3" type="Label" parent="." unique_id=303868385]
+offset_left = 884.0
+offset_top = 50.0
+offset_right = 1310.0
+offset_bottom = 151.0
+theme_override_colors/font_color = Color(0.91, 0, 0.18200026, 1)
+theme_override_constants/outline_size = 26
+theme_override_font_sizes/font_size = 46
+text = "Área Restrita"
