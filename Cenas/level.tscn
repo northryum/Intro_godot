@@ -8,5 +8,6 @@
 script = ExtResource("1_36yle")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=646137333]
+position = Vector2(62, 44)
 texture = ExtResource("2_q8twf")
 script = ExtResource("2_fl2wj")
