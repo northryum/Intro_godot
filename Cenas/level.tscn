@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://pftoulempslq"]
 
-[ext_resource type="Script" uid="uid://c08wsoyq8q2ir" path="res://Scripts/level2.gd" id="1_36yle"]
+[ext_resource type="Script" uid="uid://dcbhi5pbhyf41" path="res://Scripts/level3.gd" id="1_36yle"]
+[ext_resource type="Script" uid="uid://dqeh2p0nkmsb4" path="res://Sprites/sprite_2d.gd" id="2_fl2wj"]
+[ext_resource type="Texture2D" uid="uid://boj0qqvdk5aau" path="res://icon.svg" id="2_q8twf"]
 
 [node name="Level" type="Node2D" unique_id=945957495]
 script = ExtResource("1_36yle")
 
-[node name="Control" type="Control" parent="." unique_id=160740556]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=646137333]
+texture = ExtResource("2_q8twf")
+script = ExtResource("2_fl2wj")
